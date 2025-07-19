@@ -38,6 +38,8 @@ Mini Commerce is a modern e-commerce application built with Next.js, TypeScript,
 - Next.js
 - TypeScript
 - Tailwind CSS
+- Radio UI for UI components
+- Zod for form validation
 - React Query
 - Zustand for state management
 - React Hook Form for form handling
