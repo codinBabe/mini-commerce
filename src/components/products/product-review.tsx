@@ -108,7 +108,7 @@ export default function ProductReviews({
     <div className="space-y-6">
       <div>
         <h2 className="text-xl font-semibold">Reviews</h2>
-        <div className="flex items-start gap-16 mt-2">
+        <div className="flex flex-col md:flex-row md:items-start items-center gap-16 mt-2">
           <div className="bg-[var(--bg-section)] p-5 rounded-md space-y-4 text-center">
             <p className="text-2xl md:text-5xl font-medium">
               {rating.toFixed(1)}

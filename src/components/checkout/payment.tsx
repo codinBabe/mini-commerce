@@ -17,27 +17,41 @@ import {
 } from "@/components/ui";
 import { useCart, useCheckoutStore } from "@/store";
 import { PaymentFormData, paymentSchema } from "@/schema";
-import { formatPrice } from "@/hooks";
+import { formatPrice, toast } from "@/hooks";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Payment = ({ onBack }: { onBack: () => void }) => {
   const [sameAsBilling, setSameAsBilling] = useState(true);
-
-  const { items, getTax, getShipping, getSubtotal, getTotal } = useCart();
+  const { items, getTax, getShipping, getSubtotal, getTotal, clearCart } =
+    useCart();
   const setPayment = useCheckoutStore((s) => s.setPayment);
   const address = useCheckoutStore((s) => s.address);
   const shippingMethod = useCheckoutStore((s) => s.shippingMethod);
+  const router = useRouter();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<PaymentFormData>({ resolver: zodResolver(paymentSchema) });
 
-  const onSubmit = (data: PaymentFormData) => {
+  const onSubmit = async (data: PaymentFormData) => {
     setPayment(data);
-    alert("Payment submitted successfully!");
+
+    // Simulate payment processing
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const orderId = Math.random().toString(36).substring(2, 15).toUpperCase();
+
+    clearCart();
+    router.push(`/checkout/success?orderId=${orderId}`);
+
+    toast({
+      title: "Order Placed Successfully!",
+      description: `Your order #${orderId} has been confirmed.`,
+    });
   };
 
   return (

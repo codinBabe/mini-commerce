@@ -188,5 +188,97 @@
       "A16 Bionic",
       "Gold"
     ]
+  },
+  {
+    "id": "p11",
+    "name": "Apple iPhone 11 128GB White (MQ233)",
+    "slug": "iphone-11-128gb-white",
+    "images": ["/images/iphone-11-white.png"],
+    "price": 599,
+    "originalPrice": 699,
+    "description": "Apple iPhone 11 128GB White (MQ233)",
+    "category": "phones",
+    "brand": "Apple",
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 120,
+    "features": [
+      "128GB",
+      "Liquid Retina",
+      "6.1\"",
+      "IP68",
+      "3110mAh",
+      "A13 Bionic",
+      "White"
+    ]
+  },
+  {
+    "id": "p12",
+    "name": "Apple iPhone 13 mini 128GB Pink (MLK23)",
+    "slug": "iphone-13-mini-128gb-pink",
+    "images": ["/images/iphone-13-mini-pink.png"],
+    "price": 699,
+    "originalPrice": 799,
+    "description": "Apple iPhone 13 mini 128GB Pink (MLK23)",
+    "category": "phones",
+    "brand": "Apple",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 110,
+    "features": [
+      "128GB",
+      "Super Retina XDR",
+      "5.4\"",
+      "IP68",
+      "2438mAh",
+      "A15 Bionic",
+      "Pink"
+    ]
+  },
+  {
+    "id": "p13",
+    "name": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
+    "slug": "iphone-14-pro-256gb-space-black",
+    "images": ["/images/iphone-14-pro-space-black.png"],
+    "price": 1099,
+    "originalPrice": 1199,
+    "description": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
+    "category": "phones",
+    "brand": "Apple",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 150,
+    "features": [
+      "256GB",
+      "OLED",
+      "6.1\"",
+      "IP68",
+      "3200mAh",
+      "A16 Bionic",
+      "Space Black"
+    ]
+  },
+  {
+    "id": "p14",
+    "name": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
+    "slug": "iphone-14-pro-256gb-silver",
+    "images": ["/images/iphone-14-pro-silver.png"],
+    "price": 1099,
+    "originalPrice": 1199,
+    "description": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
+    "category": "phones",
+    "brand": "Apple",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 150,
+    "features": [
+      "256GB",
+      "OLED",
+      "6.1\"",
+      "IP68",
+      "3200mAh",
+      "A16 Bionic",
+      "Silver"
+    ]
   }
 ]
