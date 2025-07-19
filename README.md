@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini Commerce
 
-## Getting Started
+Mini Commerce is a modern e-commerce application built with Next.js, TypeScript, and Tailwind CSS. It provides a seamless shopping experience with features like product browsing, cart management, and checkout.
 
-First, run the development server:
+## Pages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Home
+- About
+- Contact
+- Blog
+- Favorites
+- Cart/Checkout
+- Profile
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Work In Progress
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- User Profile
+- Favorites
+- About
+- Contact
+- Blog
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- Responsive design
+- Product filtering and sorting
+- Secure checkout process
+- Order management
+- Admin functionalities (to be implemented)
+- User authentication and profile management (to be implemented)
+- Favorites management (to be implemented)
+- Blog management (to be implemented)
+- Contact form (to be implemented)
+- About page (to be implemented)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React Query
+- Zustand for state management
+- React Hook Form for form handling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mini-commerce.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd mini-commerce
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and go to `http://localhost:3000` to view the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details
+
+## Contact
+
+For any inquiries or feedback, please reach out to [teboola2@gmail.com](mailto:teboola2@gmail.com).
