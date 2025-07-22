@@ -10,9 +10,6 @@ const ProductTabs = () => {
   const { data: products, isLoading } = useProducts();
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
 
-  const tabStyle =
-    "px-4 text-sm font-medium whitespace-nowrap data-[state=active]:text-black data-[state=active]:border-b-2 data-[state=active]:border-black pb-1 text-[var(--text-secondary)] hover:text-black transition-colors";
-
   return (
     <section className="max-w-6xl mx-auto px-4 py-10">
       <Tabs defaultValue="new" className="space-y-6">

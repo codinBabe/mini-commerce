@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { useFilters } from "@/store";
 import {
+  Checkbox,
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-  Input,
+  Label,
 } from "../ui";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
@@ -41,15 +42,16 @@ export default function FilterSidebar({ filters }: { filters: string[] }) {
         <CollapsibleContent className="space-y-2 mt-2">
           {filters.map((brand) => (
             <div key={brand}>
-              <label className="flex items-center space-x-2">
-                <Input
-                  className="h-4 w-4"
-                  type="checkbox"
+              <Label className="flex items-center space-x-2">
+                <Checkbox
                   checked={selectedBrands.includes(brand)}
-                  onChange={(e) => handleToggle(brand, e.target.checked)}
+                  onCheckedChange={(checked) =>
+                    handleToggle(brand, checked === true)
+                  }
+                  className="h-4 w-4 bg-black text-white"
                 />
                 <span>{brand}</span>
-              </label>
+              </Label>
             </div>
           ))}
         </CollapsibleContent>

@@ -202,9 +202,7 @@ const Payment = ({ onBack }: { onBack: () => void }) => {
                       id="sameAsBilling"
                       className="bg-black text-white shadow-md"
                       checked={sameAsBilling}
-                      onCheckedChange={(checked) =>
-                        setSameAsBilling(!sameAsBilling)
-                      }
+                      onCheckedChange={() => setSameAsBilling(!sameAsBilling)}
                     />
                     <Label htmlFor="sameAsBilling">
                       Same as billing address

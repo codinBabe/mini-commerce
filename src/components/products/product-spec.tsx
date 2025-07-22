@@ -43,8 +43,8 @@ const ProductSpecs = ({ features }: ProductSpecsProps) => {
         bold design solutions. And how good that in such realities Apple
         everything is fine with displays. Both critics and mass consumers always
         praise the quality of the picture provided by the products of the
-        Californian brand. And last year's 6.7-inch Retina panels, which had
-        ProMotion, caused real admiration for many.
+        Californian brand. And last year&apos;s 6.7-inch Retina panels, which
+        had ProMotion, caused real admiration for many.
       </p>
 
       <Collapsible.Root open={open} onOpenChange={setOpen}>

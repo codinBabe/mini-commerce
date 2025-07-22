@@ -49,8 +49,9 @@ const Shipping = ({
   );
 
   const [showCalendar, setShowCalendar] = useState(false);
+  type ShippingMethod = "free" | "express" | "schedule";
 
-  const getDisplayDate = (value: string) => {
+  const getDisplayDate = (value: ShippingMethod) => {
     if (value === "schedule") {
       return shippingDate
         ? format(shippingDate, "dd MMM, yyyy")
@@ -86,7 +87,7 @@ const Shipping = ({
             <RadioGroupItem
               value={option.value}
               checked={shippingMethod === option.value}
-              onChange={() => setShippingMethod(option.value as any)}
+              onChange={() => setShippingMethod(option.value as ShippingMethod)}
               className="mr-4"
             />
             <div
@@ -109,7 +110,7 @@ const Shipping = ({
                 if (option.value === "schedule") setShowCalendar(!showCalendar);
               }}
             >
-              {getDisplayDate(option.value)}
+              {getDisplayDate(option.value as ShippingMethod)}
               {option.value === "schedule" && (
                 <ChevronDown className="w-4 h-4" />
               )}

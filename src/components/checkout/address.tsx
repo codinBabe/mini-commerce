@@ -39,7 +39,6 @@ export default function AddressStep({ onNext }: { onNext: () => void }) {
   const {
     register,
     handleSubmit,
-    reset,
     watch,
     setValue,
     formState: { errors },

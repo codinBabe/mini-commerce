@@ -32,7 +32,7 @@ export default function Cart() {
           Your cart is empty
         </h2>
         <p className="text-muted-foreground text-center mb-8 max-w-md">
-          Looks like you haven't added any products to your cart yet. Start
+          Looks like you haven&apos;t added any products to your cart yet. Start
           shopping to fill it up!
         </p>
         <Button asChild size="lg">

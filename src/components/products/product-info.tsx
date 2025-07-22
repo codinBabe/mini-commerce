@@ -27,16 +27,8 @@ interface ProductInfoProps {
 }
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
-  const {
-    name,
-    price,
-    originalPrice,
-    rating,
-    reviewCount,
-    description,
-    inStock,
-    features,
-  } = product;
+  const { name, price, originalPrice, description, inStock, features } =
+    product;
   const colors = ["#000000", "#781DBC", "#E10000", "#E1B000", "#E8E8E8"];
   const storages = ["128GB", "256GB", "512GB", "1TB"];
 

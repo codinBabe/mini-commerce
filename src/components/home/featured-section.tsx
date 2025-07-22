@@ -27,7 +27,7 @@ const FeaturedSection = () => {
                 Apple AirPods <span className="font-bold">Max</span>
               </h2>
               <p className="text-[var(--text-secondary)] max-w-sm">
-                Computational audio. Listen, it's powerful
+                Computational audio. Listen, it&apos;s powerful
               </p>
             </div>
           </div>
